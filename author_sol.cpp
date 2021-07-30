@@ -13,8 +13,8 @@ int main() {
 		// calculate the distance of the thief using right or down moves
 		int thief_distance = (n - x) + (m - y);
 		// calculate the distance of the police by using the (right + down) and remaining moves
-		// minimum(right moves, down moves) = (right + down moves) (probability: sum rule)
-		int police_distance = (n - a) + (m - b) - min(n - a, m - b);
+		// minimum(right moves, down moves) = (right + down moves)
+		int police_distance = (n - a) + (m - b) - min(n - a, m - b); // (probability: sum rule)
 		cout << (thief_distance <= police_distance ? "YES" : "NO") << '\n';
 	}
 	return 0;
